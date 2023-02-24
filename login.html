@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/loginStyles.css"">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/login.js"></script>
+    <script src="src/utils/elements.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Login</h3>
+      <div class="savebtn" id="savebtn">
+        <a href="/index.html">Back</a>
+      </div>
+      <form id="post">
+        <div>
+          <p>Username</p>
+          <input type="username" name="username" id="username" />
+        </div>
+        <div>
+          <p>Password</p>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="formError">
+          <p id="formErrorText"></p>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

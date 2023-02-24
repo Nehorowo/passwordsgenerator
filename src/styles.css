@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+.box {
+  z-index: 1;
+  background-color: white;
+  padding-top: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.144);
+}
+
+.box h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 26px;
+  color: #0099ff;
+  font-family: sans-serif;
+}
+
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 5px;
+  user-select: none;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #0099ff;
+  outline: none;
+  font-size: 24px;
+}
+
+#password {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
+
+#password::placeholder {
+  font-size: 23px;
+}
+
+.btn1 {
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 2px solid #0099ff;
+  height: 50px;
+  width: 80%;
+  text-align: center;
+  background-color: #0099ff;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn2,
+.savebtn {
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 2px solid #0099ff;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  background-color: #0099ff;
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+#button:hover {
+  color: white;
+  background-color: #32adff;
+  border-color: #32adff;
+}
+
+.buttonWrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.passwordParams {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.passwordParams > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.passwordParams span {
+  margin-right: 10px;
+}
+
+#passLength {
+  padding: 5px;
+  user-select: none;
+  height: 35px;
+  width: 80px;
+  border-radius: 6px;
+  border: 2px solid #0099ff;
+  outline: none;
+  font-size: 24px;
+}
+
+input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+  border-radius: 6px;
+  border: 2px solid #0099ff;
+  outline: none;
+}
+
+.deleteButton {
+  font-family: sans-serif;
+  font-size: 16px;
+  border: 2px solid #0099ff;
+  height: 20px;
+  width: 40px;
+  text-align: center;
+  background-color: #0099ff;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.deleteButton:hover {
+  background-color: #0071bd;
+  border: 2px solid #0071bd;
+}
+
+.passwordsListsElement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.loginRegisterWrapper {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}

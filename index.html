@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/toast/toast.css" />
+    <link rel="stylesheet" href="./src/guard/guard.css" />
+    <link rel="stylesheet" href="./src/loader/loader.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- <div class="guardContainer">
+        <div class="guardOverlay"></div>
+        <div class="guardContent">
+          <h3>Вы точно хотите удалить пароль?</h3>
+          <div class="guardButtons">
+            <button class="guardButton">Отмена</button>
+            <button class="guardButton">Удалить</button>
+          </div>
+        </div>
+      </div> -->
+      <div class="box">
+        <h3>PASSWORD GENERATOR</h3>
+        <div class="loginRegisterWrapper">
+          <div class="savebtn" id="loginbtn">
+            <a href="login.html">Login</a>
+          </div>
+          <div class="savebtn" id="registerbtn">
+            <a href="register.html">Register</a>
+          </div>
+        </div>
+        <div class="passwordWrapper">
+          <input
+            type="text"
+            name="password"
+            placeholder="Create password"
+            id="password"
+            readonly
+          />
+          <p id="copied"></p>
+          <div class="savebtn" id="savebtn">
+            Save
+          </div>
+          <div class="btn2" id="copyBtn">
+            Copy
+          </div>
+        </div>
+        <div class="passwordParams">
+          <div>
+            <span>Password length</span>
+            <input
+              type="number"
+              name="passLength"
+              id="passLength"
+              min="8"
+              max="16"
+            />
+          </div>
+          <div>
+            <span>Uppercase</span>
+            <input type="checkbox" name="passUppercase" id="passUppercase" />
+          </div>
+          <div>
+            <span>Lowercase</span>
+            <input type="checkbox" name="passLowercase" id="passLowercase" />
+          </div>
+          <div>
+            <span>No special chars</span>
+            <input
+              type="checkbox"
+              name="passSpecialChars"
+              id="passSpecialChars"
+            />
+          </div>
+          <div>
+            <span>No numbers</span>
+            <input type="checkbox" name="passNoNumbers" id="passNoNumbers" />
+          </div>
+        </div>
+        <div class="listWrapper">
+          <ul class="list" id="list"></ul>
+        </div>
+        <div class="buttonWrapper">
+          <div class="btn1" id="generateBtn">
+            Generate
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="src/utils/elements.js"></script>
+    <script src="src/toast/toast.js"></script>
+    <script src="src/guard/guard.js"></script>
+    <script src="src/loader/loader.js"></script>
+  </body>
+</html>
